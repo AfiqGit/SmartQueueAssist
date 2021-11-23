@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770357098106",
+    "project_id": "smartqueueapps-4a5a8",
+    "storage_bucket": "smartqueueapps-4a5a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770357098106:android:9d3e82b43ba03b59856dc3",
+        "android_client_info": {
+          "package_name": "com.example.smart_queue_assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770357098106-gd3rnfja854gnk071pjtvldmgi7ehgbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLKF9HJ69Cq3KER4ugEQy-Gpg-hR6_qiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770357098106-gd3rnfja854gnk071pjtvldmgi7ehgbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
