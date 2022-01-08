@@ -41,7 +41,7 @@ class ViewQueueForUserControllerState extends State<ViewQueueForUserController> 
         int counter = snapshot.data['counterValue'];
         try{
           if(counter !=0){
-                    return buildDoctorInspectionView(context, counter);
+            return buildDoctorInspectionView(context, counter);
           }
           else {
             print('no data');
@@ -119,7 +119,7 @@ class ViewQueueForUserControllerState extends State<ViewQueueForUserController> 
                 '$queueNumber',
                   style: TextStyle(
                   fontFamily: 'Oxanium',
-                  fontSize: 80.5,
+                  fontSize: 70.5,
                   color: Colors.white
                 ),
               ),
@@ -214,7 +214,7 @@ class ViewQueueForUserControllerState extends State<ViewQueueForUserController> 
                 '$queueNumber',
                   style: TextStyle(
                   fontFamily: 'Oxanium',
-                  fontSize: 80.5,
+                  fontSize: 70.5,
                   color: Colors.white
                 ),
               ),
@@ -309,7 +309,7 @@ class ViewQueueForUserControllerState extends State<ViewQueueForUserController> 
                 '$queueNumber',
                   style: TextStyle(
                   fontFamily: 'Oxanium',
-                  fontSize: 80.5,
+                  fontSize: 70.5,
                   color: Colors.white
                 ),
               ),

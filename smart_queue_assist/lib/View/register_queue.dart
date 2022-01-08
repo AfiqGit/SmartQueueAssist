@@ -100,7 +100,7 @@ class RegisterQueueState extends State<RegisterQueue> {
                     fontFamily: 'Oxygen',
                     fontWeight: FontWeight.bold,
                     fontSize: 23.5,
-                    color: Colors.white
+                    color: Colors.black
                   ),
                 ),
                 Text(
@@ -110,7 +110,7 @@ class RegisterQueueState extends State<RegisterQueue> {
                     fontFamily: 'Oxygen',
                     fontWeight: FontWeight.bold,
                     fontSize: 23.5,
-                    color: Colors.white
+                    color: Colors.black
                   ),
                 ),        
               ]
@@ -120,6 +120,7 @@ class RegisterQueueState extends State<RegisterQueue> {
             onPressed: () async{
               await scanQR();
               getDate();
+              print(userSession.userId);
               await QueueController(userId: userSession.userId).getRegistrationCounterFromFirebase(userSession.userId, result, date);
               TimeForeCastController(time: date).insertTime();
                 setState(() {

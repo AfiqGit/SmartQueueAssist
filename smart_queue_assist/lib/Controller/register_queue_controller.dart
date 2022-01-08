@@ -60,7 +60,9 @@ class QueueController{
     String patientName;
 
     userCollection.document(patientId).get().then((DocumentSnapshot snapshot){
-      patientName = snapshot.data['name'];
+      patientName = snapshot.data['first_name'];
+      print('insdide patient name');
+      print(patientName);
       registerQueueNumber(patientId, queueNumber, timeRegister, counter, patientName);
     });
 
@@ -342,6 +344,8 @@ class ViewQueueControllerState extends State<ViewQueueController> {
 
             calculateAverageWaitingTime(average, difference, counter) async{
               average = (average + difference)/counter;
+              print('inside average calculation');
+              print(average);
               await Firestore.instance.collection('/queue/doctorInspection/averageWaitingQueue').document('average').updateData({'averageValue' : average});
             }
 
@@ -383,10 +387,6 @@ class ViewQueueControllerState extends State<ViewQueueController> {
           return buildQueue(context, patientName, queueNumber);
         }
         
-        else {
-          print('no data to be displayed');
-          return buildQueue(context, "No Data", "No Data");
-        }
         }
         catch (e){
           print('no data to be displayed');
